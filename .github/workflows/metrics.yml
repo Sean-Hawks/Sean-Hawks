@@ -16,9 +16,9 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          # GITHUB_TOKEN works for public data. For private-repo stats, add a PAT as secret METRICS_TOKEN
-          # and change this to ${{ secrets.METRICS_TOKEN }}.
-          token: ${{ secrets.GITHUB_TOKEN }}
+          # GITHUB_TOKEN only sees this repo, so languages/habits/achievements come out empty.
+          # Add a classic PAT (scopes: public_repo, read:user) as repo secret METRICS_TOKEN for full stats.
+          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
           user: Sean-Hawks
           filename: github-metrics.svg
           committer_branch: output
