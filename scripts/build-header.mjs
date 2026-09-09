@@ -171,3 +171,49 @@ for (const [id, key, value, note, delay] of LINES) {
   fs.writeFileSync(`assets/link-${id}.svg`, svg);
 }
 console.log("typed link lines written");
+
+// toolbox panel
+const GROUPS = [
+  ["LANG",    [["Python", "#3776AB"], ["C++", "#00599C"], ["C", "#A8B9CC"], ["TypeScript", "#3178C6"], ["JavaScript", "#F7DF1E"], ["Bash", "#4EAA25"]]],
+  ["ML/HPC",  [["PyTorch", "#EE4C2C"], ["CUDA", "#76B900"], ["Slurm", "#4FA3DD"], ["Inspect AI", "#a78bfa"], ["Jupyter", "#F37626"]]],
+  ["SYSTEM",  [["Linux", "#FCC624"], ["Docker", "#2496ED"], ["Git", "#F05032"], ["GitHub Actions", "#2088FF"]]],
+  ["WEB",     [["Next.js", "#ffffff"], ["React", "#61DAFB"], ["Node.js", "#5FA04E"], ["Markdown", "#d9d4c9"]]],
+  ["EDITOR",  [["Neovim", "#57A143"], ["VS Code", "#007ACC"], ["Obsidian", "#7C3AED"]]],
+  ["AGENTS",  [["Claude Code", "#D97757"], ["Codex", "#10A37F"]]],
+  ["HW",      [["Arduino", "#00979D"], ["ESP32", "#E7352C"], ["Raspberry Pi", "#C51A4A"]]],
+];
+const ROW = 50, PAD = 28, LABEL_X = 44, CHIP_X = 190, TW = 1600, TH = PAD * 2 + GROUPS.length * ROW;
+let body = "", n = 0;
+GROUPS.forEach(([label, tools], r) => {
+  const y = PAD + r * ROW + 32;
+  body += `<text class="m in" style="animation-delay:${(r * 0.12).toFixed(2)}s" x="${LABEL_X}" y="${y}" font-size="13" fill="${AMBER}" letter-spacing="3">${label}</text>`;
+  body += `<path d="M${CHIP_X - 20} ${y - 6}v-8" stroke="#2a2733"/>`;
+  let x = CHIP_X;
+  for (const [name, color] of tools) {
+    const w = 34 + name.length * 9.2;
+    body += `<g class="in" style="animation-delay:${(r * 0.12 + 0.15 + n * 0.04).toFixed(2)}s">
+      <rect x="${x}" y="${y - 22}" width="${w}" height="32" rx="6" fill="${INK}" fill-opacity=".85" stroke="#2a2733"/>
+      <circle cx="${x + 15}" cy="${y - 6}" r="4" fill="${color}"/>
+      <text class="m" x="${x + 27}" y="${y - 1}" font-size="15" fill="${FG}">${name}</text>
+    </g>`;
+    x += w + 10; n++;
+  }
+});
+const toolbox = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${TW} ${TH}" width="${TW}" height="${TH}" role="img" aria-label="Toolbox">
+<defs>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="${AMBER}" stroke-opacity=".06"/></pattern>
+  <style>
+    .m{font-family:${MONO}}
+    .in{opacity:0;animation:in .5s cubic-bezier(.2,.7,.2,1) forwards}
+    @keyframes in{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:none}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important}}
+  </style>
+</defs>
+<rect x=".5" y=".5" width="${TW - 1}" height="${TH - 1}" rx="18" fill="${INK}" fill-opacity=".92" stroke="#2a2733"/>
+<rect width="${TW}" height="${TH}" rx="18" fill="url(#grid)"/>
+<g stroke="${AMBER}" stroke-width="2" fill="none" stroke-opacity=".9"><path d="M20 44V20h24"/><path d="M${TW - 20} 44V20h-24"/><path d="M20 ${TH - 44}v24h24"/><path d="M${TW - 20} ${TH - 44}v24h-24"/></g>
+<text class="m" x="${TW - 44}" y="${PAD + 4}" text-anchor="end" font-size="12" fill="${DIM}" letter-spacing="3">SYS.HAWKS // TOOLBOX</text>
+${body}
+</svg>`;
+fs.writeFileSync("assets/toolbox.svg", toolbox);
+console.log("assets/toolbox.svg", TW + "x" + TH);

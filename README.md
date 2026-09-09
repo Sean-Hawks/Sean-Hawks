@@ -39,8 +39,6 @@ Most of what I learn ends up on [hawks.tw](https://hawks.tw/), a small personal 
 
 <!-- Everything below is auto-generated from https://hawks.tw/rss.xml by .github/workflows/blog-posts.yml -->
 
-### Blog
-
 <!-- BLOG:START -->
 <table>
 <tr><td width="50%" valign="top"><a href="https://hawks.tw/blog/hipac/"><img src="https://hawks.tw/og/blog-hipac.png" alt="" width="100%" /></a><br /><sub>2026-08-04</sub><br /><b><a href="https://hawks.tw/blog/hipac/">初體驗 HiPAC！佳作、NVIDIA 特別獎、未來之星獎歷程</a></b></td><td width="50%" valign="top"><a href="https://hawks.tw/blog/ais3/"><img src="https://hawks.tw/og/blog-ais3.png" alt="" width="100%" /></a><br /><sub>2026-07-31</sub><br /><b><a href="https://hawks.tw/blog/ais3/">什麼是 AIS3？第一次參加就上手！</a></b></td></tr>
@@ -48,20 +46,11 @@ Most of what I learn ends up on [hawks.tw](https://hawks.tw/), a small personal 
 </table>
 <!-- BLOG:END -->
 
-### Library
-
-<!-- LIBRARY:START -->
-- `2026-06-19` [評論：角野隼斗](https://hawks.tw/library/artist/cateen-hayato-sumino/)
-- `2026-06-16` [評論：《四月是你的謊言》](https://hawks.tw/library/anime/your-lie-in-april/)
-<!-- LIBRARY:END -->
-
-More on [hawks.tw/blog](https://hawks.tw/blog/) · [Library](https://hawks.tw/library/) · [Timeline](https://hawks.tw/timeline/)
+More on [hawks.tw/blog](https://hawks.tw/blog/) · [Timeline](https://hawks.tw/timeline/)
 
 ## Toolbox
 
-<p>
-  <img src="https://skillicons.dev/icons?i=py,cpp,c,ts,js,nextjs,react,pytorch,linux,bash,docker,git,arduino&perline=13" alt="skills" />
-</p>
+<img src="assets/toolbox.svg" alt="Toolbox: Python, C++, C, TypeScript, JavaScript, Bash, PyTorch, CUDA, Slurm, Inspect AI, Jupyter, Linux, Docker, Git, GitHub Actions, Next.js, React, Node.js, Markdown, Neovim, VS Code, Obsidian, Claude Code, Codex, Arduino, ESP32, Raspberry Pi" width="100%" />
 
 ## Activity
 
