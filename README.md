@@ -49,11 +49,11 @@ Most of what I learn ends up on [hawks.tw](https://hawks.tw/), a small personal 
 ## Latest posts
 
 <!-- Auto-updated from https://hawks.tw/rss.xml by .github/workflows/blog-posts.yml -->
-<!-- BLOG-POST-LIST:START -->- 2026-00-09 · [ヨルシカ 台北二人稱快閃&quot;店&quot;](https://hawks.tw/talk/2026-09-09/)
-- 2026-00-02 · [大安電資新生說明會！](https://hawks.tw/talk/2026-09-02/)
-- 2026-00-18 · [資工系分科大跳水？](https://hawks.tw/talk/2026-08-18/)
-- 2026-00-16 · [等等我！](https://hawks.tw/talk/2026-08-16/)
-- 2026-00-15 · [有趣的部落格](https://hawks.tw/talk/2026-08-15/)
+<!-- BLOG-POST-LIST:START -->- 2026-09-09 · [ヨルシカ 台北二人稱快閃"店"](https://hawks.tw/talk/2026-09-09/)
+- 2026-09-02 · [大安電資新生說明會！](https://hawks.tw/talk/2026-09-02/)
+- 2026-08-18 · [資工系分科大跳水？](https://hawks.tw/talk/2026-08-18/)
+- 2026-08-16 · [等等我！](https://hawks.tw/talk/2026-08-16/)
+- 2026-08-15 · [有趣的部落格](https://hawks.tw/talk/2026-08-15/)
 <!-- BLOG-POST-LIST:END -->
 
 More on [hawks.tw/blog](https://hawks.tw/blog/) · full history on the [Timeline](https://hawks.tw/timeline/)
