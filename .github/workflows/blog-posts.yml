@@ -17,6 +17,7 @@ jobs:
         with:
           feed_list: "https://hawks.tw/rss.xml"
           max_post_count: 5
-          date_format: "yyyy-MM-dd"
+          date_format: "yyyy-mm-dd"
+          disable_html_encoding: "true"
           template: "- $date · [$title]($url)$newline"
           commit_message: "chore: update latest posts"
