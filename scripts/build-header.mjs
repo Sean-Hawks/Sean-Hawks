@@ -182,7 +182,7 @@ const GROUPS = [
   ["AGENTS",  [["Claude Code", "#D97757"], ["Codex", "#10A37F"]]],
   ["HW",      [["Arduino", "#00979D"], ["ESP32", "#E7352C"], ["Raspberry Pi", "#C51A4A"]]],
 ];
-const ROW = 50, PAD = 28, LABEL_X = 44, CHIP_X = 190, TW = 1600, TH = PAD * 2 + GROUPS.length * ROW;
+const ROW = 50, PAD = 28, LABEL_X = 44, CHIP_X = 170, TW = 1000, TH = PAD * 2 + GROUPS.length * ROW;
 let body = "", n = 0;
 GROUPS.forEach(([label, tools], r) => {
   const y = PAD + r * ROW + 32;
