@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.6 40" width="225.6" height="40" role="img" aria-label="MAIL me@hawks.tw">
+<style>.m{font-family:'JetBrains Mono','Fira Code','SF Mono',Menlo,Consolas,'Liberation Mono',monospace}.d{animation:b 1.6s ease-in-out infinite}@keyframes b{0%,100%{opacity:1}50%{opacity:.2}}</style>
+<rect x=".5" y=".5" width="224.6" height="39" rx="6" fill="#0b0a10" fill-opacity=".9" stroke="#2a2733"/>
+<path d="M8 12V8h4M217.6 12V8h-4M8 28v4h4M217.6 28v4h-4" fill="none" stroke="#fbbf24" stroke-width="1.5"/>
+<circle class="d" cx="24" cy="20" r="3" fill="#fbbf24"/>
+<text class="m" x="36" y="25" font-size="14" fill="#fbbf24" letter-spacing="2">MAIL</text>
+<text class="m" x="87.52" y="25" font-size="14" fill="#ece7dc">me@hawks.tw</text>
+</svg>

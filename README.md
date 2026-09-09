@@ -3,11 +3,10 @@
 </a>
 
 <p align="center">
-  <a href="https://hawks.tw/"><img src="https://img.shields.io/badge/hawks.tw-website-1a1523?style=flat-square&logo=googlechrome&logoColor=f5b301" alt="website" /></a>
-  <a href="https://hawks.tw/rss.xml"><img src="https://img.shields.io/badge/RSS-subscribe-1a1523?style=flat-square&logo=rss&logoColor=f97316" alt="rss" /></a>
-  <a href="https://dc.hawks.tw"><img src="https://img.shields.io/badge/Discord-dc.hawks.tw-1a1523?style=flat-square&logo=discord&logoColor=5865F2" alt="discord" /></a>
-  <a href="mailto:me@hawks.tw"><img src="https://img.shields.io/badge/Email-me%40hawks.tw-1a1523?style=flat-square&logo=gmail&logoColor=ea4335" alt="email" /></a>
-  <img src="https://komarev.com/ghpvc/?username=Sean-Hawks&style=flat-square&color=f5b301&label=views" alt="profile views" />
+  <a href="https://hawks.tw/"><img src="assets/link-web.svg" alt="hawks.tw" height="40" /></a>
+  <a href="https://hawks.tw/rss.xml"><img src="assets/link-rss.svg" alt="RSS" height="40" /></a>
+  <a href="https://dc.hawks.tw"><img src="assets/link-discord.svg" alt="Discord" height="40" /></a>
+  <a href="mailto:me@hawks.tw"><img src="assets/link-mail.svg" alt="Email" height="40" /></a>
 </p>
 
 ## About
