@@ -141,23 +141,33 @@ fs.mkdirSync("assets", { recursive: true });
 fs.writeFileSync("assets/header.svg", header);
 console.log("assets/header.svg", (fs.statSync("assets/header.svg").size / 1024).toFixed(0) + " KB");
 
-// link chips
-const chips = [
-  ["web", "WEB", "hawks.tw"],
-  ["rss", "RSS", "hawks.tw/rss.xml"],
-  ["discord", "DISCORD", "dc.hawks.tw"],
-  ["mail", "MAIL", "me@hawks.tw"],
+// typed link lines (one SVG per line so each stays clickable)
+const LINES = [
+  ["web",     "web",     "hawks.tw",         "notes, write-ups, and a library of things I love", 0.3],
+  ["rss",     "rss",     "hawks.tw/rss.xml", "subscribe. no algorithm involved",               1.9],
+  ["discord", "discord", "dc.hawks.tw",      "come say hi",                                     3.3],
+  ["mail",    "mail",    "me@hawks.tw",      "for anything else",                               4.3],
 ];
-for (const [id, label, value] of chips) {
-  const w = 30 + (label.length + value.length + 3) * 9.2 + 30;
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} 40" width="${w}" height="40" role="img" aria-label="${label} ${value}">
-<style>.m{font-family:${MONO}}.d{animation:b 1.6s ease-in-out infinite}@keyframes b{0%,100%{opacity:1}50%{opacity:.2}}</style>
-<rect x=".5" y=".5" width="${w - 1}" height="39" rx="6" fill="${INK}" fill-opacity=".9" stroke="#2a2733"/>
-<path d="M8 12V8h4M${w - 8} 12V8h-4M8 28v4h4M${w - 8} 28v4h-4" fill="none" stroke="${AMBER}" stroke-width="1.5"/>
-<circle class="d" cx="24" cy="20" r="3" fill="${AMBER}"/>
-<text class="m" x="36" y="25" font-size="14" fill="${AMBER}" letter-spacing="2">${label}</text>
-<text class="m" x="${36 + (label.length + 1.6) * 9.2}" y="25" font-size="14" fill="${FG}">${value}</text>
+const CH = 9.6, SIZE = 16, LW = 900, LH = 30;
+for (const [id, key, value, note, delay] of LINES) {
+  const parts = [["$ ", AMBER], [key.padEnd(8), FG], [value.padEnd(19), AMBER], ["# " + note, DIM]];
+  const text = parts.map(([t]) => t).join("");
+  const w = text.length * CH;
+  let x = 14, spans = "";
+  for (const [t, fill] of parts) { spans += `<tspan fill="${fill}" xml:space="preserve">${t.replace(/ /g, " ")}</tspan>`; x += t.length * CH; }
+  const dur = (text.length * 0.028).toFixed(2);
+  const keyTimes = Array.from({length: text.length + 1}, (_, i) => (i / text.length).toFixed(4)).join(";");
+  const values = Array.from({length: text.length + 1}, (_, i) => (w * i / text.length).toFixed(1)).join(";");
+  const last = id === "mail";
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${LW} ${LH}" width="${LW}" height="${LH}" role="img" aria-label="${key} ${value}">
+<style>.m{font-family:${MONO}}.c{animation:b 1s steps(2) infinite}@keyframes b{0%,100%{opacity:1}50%{opacity:0}}</style>
+<clipPath id="k"><rect x="14" y="0" width="0" height="${LH}"><animate attributeName="width" begin="${delay}s" dur="${dur}s" calcMode="discrete" keyTimes="${keyTimes}" values="${values}" fill="freeze"/></rect></clipPath>
+<text class="m" x="14" y="21" font-size="${SIZE}" clip-path="url(#k)">${spans}</text>
+<rect class="c" x="14" y="6" width="9" height="19" fill="${AMBER}" opacity="0">
+  <animate attributeName="x" begin="${delay}s" dur="${dur}s" calcMode="discrete" keyTimes="${keyTimes}" values="${values.split(";").map(v => (14 + +v).toFixed(1)).join(";")}" fill="freeze"/>
+  <set attributeName="opacity" to="1" begin="${delay}s"/>${last ? "" : `<set attributeName="opacity" to="0" begin="${(delay + +dur).toFixed(2)}s"/>`}
+</rect>
 </svg>`;
   fs.writeFileSync(`assets/link-${id}.svg`, svg);
 }
-console.log("chips written");
+console.log("typed link lines written");

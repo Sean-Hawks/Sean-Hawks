@@ -1,8 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.6 40" width="225.6" height="40" role="img" aria-label="MAIL me@hawks.tw">
-<style>.m{font-family:'JetBrains Mono','Fira Code','SF Mono',Menlo,Consolas,'Liberation Mono',monospace}.d{animation:b 1.6s ease-in-out infinite}@keyframes b{0%,100%{opacity:1}50%{opacity:.2}}</style>
-<rect x=".5" y=".5" width="224.6" height="39" rx="6" fill="#0b0a10" fill-opacity=".9" stroke="#2a2733"/>
-<path d="M8 12V8h4M217.6 12V8h-4M8 28v4h4M217.6 28v4h-4" fill="none" stroke="#fbbf24" stroke-width="1.5"/>
-<circle class="d" cx="24" cy="20" r="3" fill="#fbbf24"/>
-<text class="m" x="36" y="25" font-size="14" fill="#fbbf24" letter-spacing="2">MAIL</text>
-<text class="m" x="87.52" y="25" font-size="14" fill="#ece7dc">me@hawks.tw</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 30" width="900" height="30" role="img" aria-label="mail me@hawks.tw">
+<style>.m{font-family:'JetBrains Mono','Fira Code','SF Mono',Menlo,Consolas,'Liberation Mono',monospace}.c{animation:b 1s steps(2) infinite}@keyframes b{0%,100%{opacity:1}50%{opacity:0}}</style>
+<clipPath id="k"><rect x="14" y="0" width="0" height="30"><animate attributeName="width" begin="4.3s" dur="1.34s" calcMode="discrete" keyTimes="0.0000;0.0208;0.0417;0.0625;0.0833;0.1042;0.1250;0.1458;0.1667;0.1875;0.2083;0.2292;0.2500;0.2708;0.2917;0.3125;0.3333;0.3542;0.3750;0.3958;0.4167;0.4375;0.4583;0.4792;0.5000;0.5208;0.5417;0.5625;0.5833;0.6042;0.6250;0.6458;0.6667;0.6875;0.7083;0.7292;0.7500;0.7708;0.7917;0.8125;0.8333;0.8542;0.8750;0.8958;0.9167;0.9375;0.9583;0.9792;1.0000" values="0.0;9.6;19.2;28.8;38.4;48.0;57.6;67.2;76.8;86.4;96.0;105.6;115.2;124.8;134.4;144.0;153.6;163.2;172.8;182.4;192.0;201.6;211.2;220.8;230.4;240.0;249.6;259.2;268.8;278.4;288.0;297.6;307.2;316.8;326.4;336.0;345.6;355.2;364.8;374.4;384.0;393.6;403.2;412.8;422.4;432.0;441.6;451.2;460.8" fill="freeze"/></rect></clipPath>
+<text class="m" x="14" y="21" font-size="16" clip-path="url(#k)"><tspan fill="#fbbf24" xml:space="preserve">$ </tspan><tspan fill="#ece7dc" xml:space="preserve">mail    </tspan><tspan fill="#fbbf24" xml:space="preserve">me@hawks.tw        </tspan><tspan fill="#8b877d" xml:space="preserve"># for anything else</tspan></text>
+<rect class="c" x="14" y="6" width="9" height="19" fill="#fbbf24" opacity="0">
+  <animate attributeName="x" begin="4.3s" dur="1.34s" calcMode="discrete" keyTimes="0.0000;0.0208;0.0417;0.0625;0.0833;0.1042;0.1250;0.1458;0.1667;0.1875;0.2083;0.2292;0.2500;0.2708;0.2917;0.3125;0.3333;0.3542;0.3750;0.3958;0.4167;0.4375;0.4583;0.4792;0.5000;0.5208;0.5417;0.5625;0.5833;0.6042;0.6250;0.6458;0.6667;0.6875;0.7083;0.7292;0.7500;0.7708;0.7917;0.8125;0.8333;0.8542;0.8750;0.8958;0.9167;0.9375;0.9583;0.9792;1.0000" values="14.0;23.6;33.2;42.8;52.4;62.0;71.6;81.2;90.8;100.4;110.0;119.6;129.2;138.8;148.4;158.0;167.6;177.2;186.8;196.4;206.0;215.6;225.2;234.8;244.4;254.0;263.6;273.2;282.8;292.4;302.0;311.6;321.2;330.8;340.4;350.0;359.6;369.2;378.8;388.4;398.0;407.6;417.2;426.8;436.4;446.0;455.6;465.2;474.8" fill="freeze"/>
+  <set attributeName="opacity" to="1" begin="4.3s"/>
+</rect>
 </svg>

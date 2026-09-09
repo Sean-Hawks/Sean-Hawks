@@ -24,7 +24,7 @@ jobs:
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: Sean-Hawks
-          games: "pacman,breakout,galaga,bomberman,puzzle-bobble,minesweeper"
+          games: "pacman"
       - name: Collect
         run: |
           mkdir -p graphs

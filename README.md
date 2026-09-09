@@ -2,12 +2,10 @@
   <img src="assets/header.svg" alt="Hawks — Dev / ML / CyberSec / HPC / Percussion" width="100%" />
 </a>
 
-<p align="center">
-  <a href="https://hawks.tw/"><img src="assets/link-web.svg" alt="hawks.tw" height="40" /></a>
-  <a href="https://hawks.tw/rss.xml"><img src="assets/link-rss.svg" alt="RSS" height="40" /></a>
-  <a href="https://dc.hawks.tw"><img src="assets/link-discord.svg" alt="Discord" height="40" /></a>
-  <a href="mailto:me@hawks.tw"><img src="assets/link-mail.svg" alt="Email" height="40" /></a>
-</p>
+<a href="https://hawks.tw/"><img src="assets/link-web.svg" alt="web: hawks.tw" width="900" /></a>
+<a href="https://hawks.tw/rss.xml"><img src="assets/link-rss.svg" alt="rss: hawks.tw/rss.xml" width="900" /></a>
+<a href="https://dc.hawks.tw"><img src="assets/link-discord.svg" alt="discord: dc.hawks.tw" width="900" /></a>
+<a href="mailto:me@hawks.tw"><img src="assets/link-mail.svg" alt="mail: me@hawks.tw" width="900" /></a>
 
 ## About
 
@@ -77,26 +75,7 @@ More on [hawks.tw/blog](https://hawks.tw/blog/) · [Talk archive](https://hawks.
 
 ## Activity
 
-<!-- All images below are generated inside this repo by GitHub Actions (metrics.yml, graphs.yml). No third-party image service. -->
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Sean-Hawks/Sean-Hawks/output/github-metrics.svg" alt="GitHub metrics" width="100%" />
-</p>
-
+<!-- Generated inside this repo by .github/workflows/graphs.yml. No third-party image service. -->
 <p align="center">
   <img src="https://raw.githubusercontent.com/Sean-Hawks/Sean-Hawks/graphs/profile-night-rainbow.svg" alt="3D contribution graph" width="100%" />
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sean-Hawks/Sean-Hawks/graphs/pacman-contribution-graph-dark.svg" />
-    <img src="https://raw.githubusercontent.com/Sean-Hawks/Sean-Hawks/graphs/pacman-contribution-graph.svg" alt="Pac-Man contribution graph" width="100%" />
-  </picture>
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sean-Hawks/Sean-Hawks/graphs/breakout-contribution-graph-dark.svg" />
-    <img src="https://raw.githubusercontent.com/Sean-Hawks/Sean-Hawks/graphs/breakout-contribution-graph.svg" alt="Breakout contribution graph" width="100%" />
-  </picture>
 </p>
