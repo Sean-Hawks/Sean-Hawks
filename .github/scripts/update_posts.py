@@ -43,18 +43,17 @@ for p in blog:
     cells.append(
         f'<td width="50%" valign="top">{pic}'
         f'<sub>{p["date"]}</sub><br /><b><a href="{p["link"]}">{html.escape(p["title"])}</a></b>'
-        f'<br /><sub>{html.escape(clip(p["desc"]))}</sub></td>'
+        f'</td>'
     )
 rows = ["<tr>" + "".join(cells[i:i+2]) + "</tr>" for i in range(0, len(cells), 2)]
 blog_md = "<table>\n" + "\n".join(rows) + "\n</table>" if rows else "_Nothing yet._"
 
-talk_md = "\n".join(f'- `{p["date"]}` [{p["title"]}]({p["link"]}) — {clip(p["desc"], 60)}' for p in by("Talk")[:5]) or "_Nothing yet._"
 lib_md = "\n".join(f'- `{p["date"]}` [{p["title"]}]({p["link"]})' for p in by("Library Review")[:3]) or "_Nothing yet._"
 
 src = open(README, encoding="utf-8").read()
 def fill(s, key, body):
     return re.sub(rf"(<!-- {key}:START -->)(.*?)(<!-- {key}:END -->)", lambda m: f"{m.group(1)}\n{body}\n{m.group(3)}", s, flags=re.S)
-out = fill(fill(fill(src, "BLOG", blog_md), "TALK", talk_md), "LIBRARY", lib_md)
+out = fill(fill(src, "BLOG", blog_md), "LIBRARY", lib_md)
 if out != src:
     open(README, "w", encoding="utf-8").write(out)
     print("README updated")
