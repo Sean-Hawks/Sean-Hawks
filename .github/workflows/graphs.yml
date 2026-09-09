@@ -1,0 +1,40 @@
+name: Contribution graphs
+
+on:
+  schedule:
+    - cron: "30 0 * * *"   # daily
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  graphs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 3D contribution graphs
+        uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: Sean-Hawks
+      - name: Arcade contribution graphs
+        uses: abozanona/pacman-contribution-graph@main
+        with:
+          github_user_name: Sean-Hawks
+          games: "pacman,breakout,galaga,bomberman,puzzle-bobble,minesweeper"
+      - name: Collect
+        run: |
+          mkdir -p graphs
+          cp -r profile-3d-contrib/*.svg graphs/ || true
+          cp -r dist/*.svg graphs/ || true
+          ls -la graphs
+      - name: Push to graphs branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: graphs
+          build_dir: graphs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

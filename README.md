@@ -1,12 +1,6 @@
 <a href="https://hawks.tw/">
-  <img src="https://hawks.tw/og/default.png" alt="hawks.tw — Hawks" width="100%" />
+  <img src="assets/header.svg" alt="Hawks — Dev / ML / CyberSec / HPC / Percussion" width="100%" />
 </a>
-
-<p align="center">
-  <a href="https://hawks.tw/">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=3000&pause=800&color=F5B301&center=true&vCenter=true&width=520&lines=High+school+student+in+Taipei;Dev+%2F+ML+%2F+CyberSec+%2F+HPC+%2F+Percussion;No+algorithm+here.+Just+signal." alt="typing" />
-  </a>
-</p>
 
 <p align="center">
   <a href="https://hawks.tw/"><img src="https://img.shields.io/badge/hawks.tw-website-1a1523?style=flat-square&logo=googlechrome&logoColor=f5b301" alt="website" /></a>
@@ -84,7 +78,26 @@ More on [hawks.tw/blog](https://hawks.tw/blog/) · [Talk archive](https://hawks.
 
 ## Activity
 
-<!-- Generated in this repo by .github/workflows/metrics.yml (lowlighter/metrics). No third-party image service. -->
+<!-- All images below are generated inside this repo by GitHub Actions (metrics.yml, graphs.yml). No third-party image service. -->
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/Sean-Hawks/Sean-Hawks/output/github-metrics.svg" alt="GitHub metrics" width="100%" />
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Sean-Hawks/Sean-Hawks/graphs/profile-night-rainbow.svg" alt="3D contribution graph" width="100%" />
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sean-Hawks/Sean-Hawks/graphs/pacman-contribution-graph-dark.svg" />
+    <img src="https://raw.githubusercontent.com/Sean-Hawks/Sean-Hawks/graphs/pacman-contribution-graph.svg" alt="Pac-Man contribution graph" width="100%" />
+  </picture>
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sean-Hawks/Sean-Hawks/graphs/breakout-contribution-graph-dark.svg" />
+    <img src="https://raw.githubusercontent.com/Sean-Hawks/Sean-Hawks/graphs/breakout-contribution-graph.svg" alt="Breakout contribution graph" width="100%" />
+  </picture>
 </p>
