@@ -41,7 +41,7 @@ Most of what I learn ends up on [hawks.tw](https://hawks.tw/), a small personal 
 
 <!-- BLOG:START -->
 <table>
-<tr><td width="50%" valign="top"><a href="https://hawks.tw/blog/hipac/"><img src="https://hawks.tw/og/blog-hipac.png" alt="" width="100%" /></a><br /><sub>2026-08-04</sub><br /><b><a href="https://hawks.tw/blog/hipac/">初體驗 HiPAC！佳作、NVIDIA 特別獎、未來之星獎歷程</a></b></td><td width="50%" valign="top"><a href="https://hawks.tw/blog/ais3/"><img src="https://hawks.tw/og/blog-ais3.png" alt="" width="100%" /></a><br /><sub>2026-07-31</sub><br /><b><a href="https://hawks.tw/blog/ais3/">什麼是 AIS3？第一次參加就上手！</a></b></td></tr>
+<tr><td width="50%" valign="top"><a href="https://hawks.tw/blog/hipac/"><img src="https://hawks.tw/og/blog-hipac.png" alt="" width="100%" /></a><br /><sub>2026-09-02</sub><br /><b><a href="https://hawks.tw/blog/hipac/">初體驗 HiPAC！佳作、NVIDIA 特別獎、未來之星獎歷程</a></b></td><td width="50%" valign="top"><a href="https://hawks.tw/blog/ais3/"><img src="https://hawks.tw/og/blog-ais3.png" alt="" width="100%" /></a><br /><sub>2026-07-31</sub><br /><b><a href="https://hawks.tw/blog/ais3/">什麼是 AIS3？第一次參加就上手！</a></b></td></tr>
 <tr><td width="50%" valign="top"><a href="https://hawks.tw/blog/machine-learning-2021/"><img src="https://hawks.tw/og/blog-machine-learning-2021.png" alt="" width="100%" /></a><br /><sub>2026-06-18</sub><br /><b><a href="https://hawks.tw/blog/machine-learning-2021/">高中生如何學 Machine Learning？以李宏毅教授的 ML 2021 學起</a></b></td><td width="50%" valign="top"><a href="https://hawks.tw/blog/first-web/"><img src="https://hawks.tw/og/blog-first-web.png" alt="" width="100%" /></a><br /><sub>2025-12-29</sub><br /><b><a href="https://hawks.tw/blog/first-web/">關於這個 Blog</a></b></td></tr>
 </table>
 <!-- BLOG:END -->
