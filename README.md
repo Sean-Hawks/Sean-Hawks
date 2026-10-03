@@ -52,6 +52,14 @@ More on [hawks.tw/blog](https://hawks.tw/blog/) · [Timeline](https://hawks.tw/t
 
 <img src="assets/toolbox.svg" alt="Toolbox: Python, C++, C, TypeScript, JavaScript, Bash, PyTorch, CUDA, Slurm, Inspect AI, Jupyter, Linux, Docker, Git, GitHub Actions, Next.js, React, Node.js, Markdown, Neovim, VS Code, Obsidian, Claude Code, Codex, Arduino, ESP32, Raspberry Pi" width="100%" />
 
+## AI usage
+
+<!-- Updated by ComputAI (computai --card): aggregates only, no project names. -->
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/computai-card-light.svg" />
+  <img src="assets/computai-card.svg" alt="AI usage over the last 30 days: tokens, value at API prices, top model, active days" width="495" />
+</picture>
+
 ## Activity
 
 <!-- Generated inside this repo by .github/workflows/graphs.yml. No third-party image service. -->
