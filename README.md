@@ -40,7 +40,7 @@ Most of what I learn ends up on [hawks.tw](https://hawks.tw/), a small personal 
 <!-- Updated by ComputAI (computai --card): aggregates only, no project names. -->
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/computai-card-light.svg" />
-  <img src="assets/computai-card.svg" alt="AI usage over the last 30 days: tokens, value at API prices, activity heatmap, rank, top models and badges" width="100%" />
+  <img src="assets/computai-card.svg" alt="AI ops over the last 30 days: tokens, agent hours, peak parallel agents, activity heatmap, rank, models and badges" width="100%" />
 </picture>
 
 ## Activity
