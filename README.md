@@ -35,23 +35,6 @@ Most of what I learn ends up on [hawks.tw](https://hawks.tw/), a small personal 
 | [discord-ink](https://github.com/Sean-Hawks/discord-ink) | Write in Discord, publish Markdown to GitHub. Self-hosted, optional Gemini assist. |
 | [hawks-site](https://github.com/Sean-Hawks/hawks-site) | The site itself. Next.js + Markdown, deployed to GitHub Pages. |
 
-## Latest from hawks.tw
-
-<!-- Everything below is auto-generated from https://hawks.tw/rss.xml by .github/workflows/blog-posts.yml -->
-
-<!-- BLOG:START -->
-<table>
-<tr><td width="50%" valign="top"><a href="https://hawks.tw/blog/hipac/"><img src="https://hawks.tw/og/blog-hipac.png" alt="" width="100%" /></a><br /><sub>2026-09-02</sub><br /><b><a href="https://hawks.tw/blog/hipac/">初體驗 HiPAC！佳作、NVIDIA 特別獎、未來之星獎歷程</a></b></td><td width="50%" valign="top"><a href="https://hawks.tw/blog/ais3/"><img src="https://hawks.tw/og/blog-ais3.png" alt="" width="100%" /></a><br /><sub>2026-07-31</sub><br /><b><a href="https://hawks.tw/blog/ais3/">什麼是 AIS3？第一次參加就上手！</a></b></td></tr>
-<tr><td width="50%" valign="top"><a href="https://hawks.tw/blog/machine-learning-2021/"><img src="https://hawks.tw/og/blog-machine-learning-2021.png" alt="" width="100%" /></a><br /><sub>2026-06-18</sub><br /><b><a href="https://hawks.tw/blog/machine-learning-2021/">高中生如何學 Machine Learning？以李宏毅教授的 ML 2021 學起</a></b></td><td width="50%" valign="top"><a href="https://hawks.tw/blog/first-web/"><img src="https://hawks.tw/og/blog-first-web.png" alt="" width="100%" /></a><br /><sub>2025-12-29</sub><br /><b><a href="https://hawks.tw/blog/first-web/">關於這個 Blog</a></b></td></tr>
-</table>
-<!-- BLOG:END -->
-
-More on [hawks.tw/blog](https://hawks.tw/blog/) · [Timeline](https://hawks.tw/timeline/)
-
-## Toolbox
-
-<img src="assets/toolbox.svg" alt="Toolbox: Python, C++, C, TypeScript, JavaScript, Bash, PyTorch, CUDA, Slurm, Inspect AI, Jupyter, Linux, Docker, Git, GitHub Actions, Next.js, React, Node.js, Markdown, Neovim, VS Code, Obsidian, Claude Code, Codex, Arduino, ESP32, Raspberry Pi" width="100%" />
-
 ## AI usage
 
 <!-- Updated by ComputAI (computai --card): aggregates only, no project names. -->
